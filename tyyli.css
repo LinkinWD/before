@@ -1,6 +1,36 @@
-.laatikko {
+.laatikko, .laatikko2 {
   cursor: pointer;
   width: 45px;
+}
+
+.laatikko2 {
+  margin-top: 30px;
+  width: 50px;
+  height: 6px;
+  background: black;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.laatikko2::after {
+  content: '';
+  width: 44px;
+  position: absolute;
+  border: 3px solid black;
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.laatikko2::before {
+  content: '';
+  width: 44px;
+  position: absolute;
+  border: 3px solid black;
+  -webkit-transform: translateY(-14px);
+          transform: translateY(-14px);
 }
 
 .viiva1, .viiva2, .viiva3 {
@@ -23,7 +53,7 @@
 
 .laatikko.chance {
   border: 3px solid black;
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
 .chance.viiva3 {
@@ -34,5 +64,21 @@
 .chance.line {
   background-color: blue;
   height: 7px;
+}
+
+.muutos.laatikko2 {
+  background: green;
+}
+
+.muutos.laatikko2::before {
+  border: 3px solid blue;
+}
+
+.muutos.laatikko2::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: 3px solid blue;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 /*# sourceMappingURL=tyyli.css.map */
