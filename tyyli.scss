@@ -1,0 +1,35 @@
+.laatikko {
+    
+    cursor: pointer;
+    width: 45px;
+    
+}
+
+.viiva1, .viiva2, .viiva3 {
+    width: 35px;
+    height: 5px;
+    background: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.chance.viiva1 {
+    transform: rotate(-90deg) translate(-9px, 0px);
+
+}
+.chance.viiva2 {
+    width: 45px;
+}
+.laatikko.chance {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.chance.viiva3 {
+    transform: rotate(90deg) translate(-9px, 0px);
+}
+.chance.line {
+    background-color: blue;
+    height: 7px;
+
+}
